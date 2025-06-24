@@ -46,13 +46,21 @@ A comprehensive bash script for setting up WireGuard VPN server with port forwar
 
 ```bash
 # Download the script
+Version-1
 wget https://raw.githubusercontent.com/alphajonayed/wireguard-vpn-setup/main/wireguard_vpn_setup.sh
+version-2
+wget https://raw.githubusercontent.com/alphajonayed/wireguard-vpn-setup/main/wireguard_vpn_setup-v2.sh
 
 # Or using curl
+version 1
 curl -O https://raw.githubusercontent.com/alphajonayed/wireguard-vpn-setup/main/wireguard_vpn_setup.sh
+version-2
+curl -O https://raw.githubusercontent.com/alphajonayed/wireguard-vpn-setup/main/wireguard_vpn_setup-v2.sh
+
 
 # Make it executable
 chmod +x wireguard_vpn_setup.sh
+chmod +x wireguard_vpn_setup-v2.sh
 ```
 
 ### Step 2: Configure Server IP
@@ -61,6 +69,7 @@ Edit the script to set your server's public IP address:
 
 ```bash
 nano wireguard_vpn_setup.sh
+nano wireguard_vpn_setup-v2.sh
 ```
 
 Find and update this line:
@@ -73,6 +82,7 @@ SERVER_IP="YOUR_SERVER_PUBLIC_IP"
 ```bash
 # Run as root or with sudo
 sudo ./wireguard_vpn_setup.sh install
+sudo ./wireguard_vpn_setup-v2.sh install
 ```
 
 The installation process will:
